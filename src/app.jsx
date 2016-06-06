@@ -1,10 +1,12 @@
 import React from 'react'
 import {render} from 'react-dom'
+import App from './components/App/App.jsx'
+import './styles/main.scss'
 
-function test() {
-  console.log(this)
+async function test() {
+  await Promise.resolve(1)
 }
 
-this::test()
+console.log(test())
 
-render(<div>test</div>, document.getElementById('app'))
+render(<App />, document.getElementById('app'))
