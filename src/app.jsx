@@ -1,8 +1,8 @@
 import React, {Component, PropTypes} from 'react'
 import {render} from 'react-dom'
-import {createStore} from 'redux'
-import {connect, Provider} from 'react-redux'
-import './styles/main.scss'
+import configureStore from './configureStore'
+import Root from './containers/Root.jsx'
 
-render(
-  <div/>, document.getElementById('app'))
+const store = configureStore()
+
+render(<Root store={store}/>, document.getElementById('app'))
