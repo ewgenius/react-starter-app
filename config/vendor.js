@@ -1,4 +1,8 @@
 module.exports = [
   'react',
-  'react-dom'
+  'react-dom',
+  'redux',
+  'react-redux',
+  'redux-logger',
+  'redux-thunk'
 ]

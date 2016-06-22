@@ -2,7 +2,7 @@ const webpack = require('webpack')
 
 module.exports = {
   entry: {
-    app: './src/app.jsx',
+    app: ['babel-polyfill', './src/app.jsx'],
     vendor: require('./config/vendor')
   },
   output: {
